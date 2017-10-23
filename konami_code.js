@@ -5,6 +5,10 @@ let index = 0;
 function init() {
   // Write your JavaScript code inside the init() function
 
+  function createSpy(){
+    console.log('spy created')
+  }
+
   document.addEventListener('keydown', (e) => {
     const key = event.key;
     if(key == code[index]){
