@@ -20,6 +20,7 @@ function init() {
       }
     }
     else {
+      window.alert('a')
       index = 0;
     }
   });
