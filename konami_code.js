@@ -5,7 +5,7 @@ let index = 0;
 function init() {
   // Write your JavaScript code inside the init() function
 
-  $(document).addEventListener('keydown', (e) => {
+  document.addEventListener('keydown', (e) => {
     const key = event.key;
     if(key == code[index]){
       index++;
