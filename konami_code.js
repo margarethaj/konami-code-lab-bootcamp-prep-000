@@ -9,21 +9,7 @@ function init() {
     console.log('spy created')
   }
 
-  document.addEventListener('keydown', (e) => {
-    const key = event.key;
-    if(key == code[index]){
-      index++;
-      if(index == code.length){
-        createSpy();
-        window.alert("spy created");
-        index = 0;
-      }
-    }
-    else {
-      window.alert('a')
-      index = 0;
-    }
-  });
+  document.addEventListener('keydown', onKeyDownHandler(e));
 
   function onKeyDownHandler(e){
     const key = parseInt(e.detail || e.which || e.detail || e.location);
