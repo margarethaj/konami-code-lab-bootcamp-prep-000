@@ -14,7 +14,7 @@ function init() {
     if(key == code[index]){
       index++;
       if(index == code.length){
-        createSpy()l
+        createSpy();
         window.alert("spy created");
         index = 0;
       }
