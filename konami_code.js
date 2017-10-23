@@ -5,6 +5,10 @@ let index = 0;
 function init() {
   // Write your JavaScript code inside the init() function
 
+  function createSpy(){
+    alert('spy created')
+  }
+
   function onKeyDownHandler(e){
     const key = parseInt(e.detail || e.which || e.detail || e.location);
 
