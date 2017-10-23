@@ -12,7 +12,7 @@ function init() {
       index++;
       if(index == code.length){
         window.alert("Hurray!");
-        //createSpy();
+        createSpy();
         index = 0;
       }
     }
