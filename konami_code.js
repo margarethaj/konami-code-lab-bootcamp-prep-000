@@ -9,7 +9,7 @@ function init() {
     console.log('spy created')
   }
 
-  document.addEventListener('keydown', onKeyDownHandler(e));
+  document.addEventListener('keydown', (e) => onKeyDownHandler(e));
 
   function onKeyDownHandler(e){
     const key = parseInt(e.detail || e.which || e.detail || e.location);
